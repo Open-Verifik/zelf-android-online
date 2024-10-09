@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+    <style name="MyTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">#fff</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="colorPrimary">#fff</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="colorControlActivated">#fff</item>
+        <item name="android:textColorHint">#fff</item>
+    </style>
+
+    <style name="TransparentDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#7B95B9</item>
+        <item name="android:datePickerStyle">@style/CustomDatePickerStyle</item>
+
+        <item name="android:colorAccent">#7B95B9</item>
+    </style>
+
+    <style name="CustomDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">#7B95B9</item>
+        <item name="android:dayOfWeekBackground">#7B95B9</item>
+        <item name="android:yearListSelectorColor">#7B95B9</item>
+        <item name="android:datePickerMode">calendar</item>
+    </style>
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="spinnerTheme">
+        <item name="android:background">#7B95B9</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:color">@android:color/white</item>
+    </style>
+</resources>

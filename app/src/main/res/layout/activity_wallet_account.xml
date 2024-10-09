@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/zBackground"
+    tools:context=".ui.activity.wallet.account.WalletAccountActivity">
+
+    <include
+        layout="@layout/default_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/activity_account_desc"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:textColor="@color/zTextColor"
+                android:layout_marginHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/imageview_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="16dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/light_gray_background"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_ethereum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="@color/zButtonRippleColor"
+                app:cardBackgroundColor="@color/zBackground"
+                app:strokeColor="@color/zTextColor"
+                app:strokeWidth="1dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_ethereum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/activity_account_copy"
+                        android:src="@drawable/ic_copy2"
+                        app:tint="@color/zTextColor" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_account_eth_address_"
+                            android:fontFamily="@font/poppins_semi"
+                            android:textColor="@color/zTextColor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textviewEthAddres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:text=""
+                            android:maxWidth="140dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/zTextColor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_solana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="@color/zButtonRippleColor"
+                app:cardBackgroundColor="@color/zBackground"
+                app:strokeColor="@color/zTextColor"
+                app:strokeWidth="1dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:id="@+id/linearlayout_solana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_copy2"
+                        android:contentDescription="@string/activity_show_qr_copy"
+                        app:tint="@color/zTextColor" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semi"
+                            android:text="@string/activity_account_solana_address_"
+                            android:textColor="@color/zTextColor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textviewSolanaAddres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:maxWidth="140dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text=""
+                            android:textColor="@color/zTextColor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_download_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="@color/zButtonRippleColor"
+                app:cardBackgroundColor="@color/zBackground"
+                app:strokeColor="@color/zTextColor"
+                app:strokeWidth="1dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:id="@+id/linearlayout_qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_download2"
+                        android:layout_marginStart="30dp"
+                        android:contentDescription="@string/activity_account_download_desc"
+                        app:tint="@color/zTextColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/activity_account_download"
+                        android:textColor="@color/zTextColor"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardview_recover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:rippleColor="@color/zButtonRippleColor"
+                app:cardBackgroundColor="@color/zBackground"
+                app:strokeColor="@color/zTextColor"
+                app:strokeWidth="1dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:id="@+id/linearlayout_recover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_lock"
+                        android:layout_marginStart="30dp"
+                        android:contentDescription="@string/activity_account_recover_desc"
+                        app:tint="@color/zTextColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/activity_account_button_recover_account"
+                        android:textColor="@color/zTextColor"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
