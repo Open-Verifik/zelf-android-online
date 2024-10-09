@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/relativelayout_parent"
+    android:background="@color/zBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_wallet_header_logo"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="-5dp"
+            android:background="@color/zTextColor"
+            android:layout_marginBottom="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_scrollcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true">
+
+                            <ImageView
+                                android:id="@+id/image_left"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="40dp"
+                                android:src="@drawable/chevron_left"
+                                android:alpha="0.5"
+                                android:contentDescription="@string/go_left"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/image_right"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginBottom="40dp"
+                                android:src="@drawable/chevron_right"
+                                android:contentDescription="@string/go_right"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp">
+                        <View
+                            android:id="@+id/view_dot1"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/dot_indicator_selected" />
+
+                        <View
+                            android:id="@+id/view_dot2"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/dot_indicator" />
+
+                        <View
+                            android:id="@+id/view_dot3"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/dot_indicator" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3E3E3"
+                        android:layout_marginVertical="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_main_search_title"
+                        android:fontFamily="@font/menda_bold"
+                        android:textColor="@color/zTextColor"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="20sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/input_background">
+                        <EditText
+                            android:id="@+id/edittext_zns"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:autofillHints=""
+                            android:fontFamily="@font/menda_bold"
+                            android:textSize="16sp"
+                            android:imeOptions="actionSearch"
+                            android:hint="@string/activity_main_search_hint"
+                            android:background="@null" />
+
+                        <TextView
+                            android:id="@+id/textview_zns"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/menda_bold"
+                            android:textColor="@color/zTextColor"
+                            android:text="@string/activity_main_search_zelf" />
+
+                        <ImageView
+                            android:id="@+id/imageview_search"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_search"
+                            android:contentDescription="@string/activity_main_search_desc"
+                            app:tint="@color/zTextColor" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/search_button"
+                        style="@style/button_positive_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textAllCaps="false"
+                        android:text="@string/activity_main_search_button" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textview_forgetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"
+            android:textColor="@color/zTextColor"
+            android:text="@string/activity_main_remember_user_name"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:id="@+id/view_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#88000000" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Wave"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:SpinKit_Color="@color/colorWhite"
+        android:indeterminate="true"
+        android:layout_below="@+id/anchor"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

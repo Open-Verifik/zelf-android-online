@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPersonDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tabBar"
+        layout="@layout/action_bar_steps" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/activity_reader_detail_desc"
+        android:textSize="14sp"
+        android:textColor="@color/zTextColor"
+        android:fontFamily="@font/poppins" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="50dp"
+        app:cardBackgroundColor="@color/zBackgroundLight"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_large">
+            <co.verifik.wallet.ui.SmartRecyclerView
+                android:id="@+id/rvClearData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_clear_data"
+                android:paddingVertical="@dimen/margin_medium_2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button_positive_1"
+        android:id="@+id/button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAllCaps="false"
+        android:text="@string/activity_reader_unlock_info" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button_positive_1_border"
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAllCaps="false"
+        android:text="@string/activity_reader_detail_back" />
+
+</LinearLayout>

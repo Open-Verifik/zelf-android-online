@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="permissions_needed">Los permisos de cámara y de escritura de disco son necesarios
+        para capturar imágenes</string>
+    <string name="settings">Configuración</string>
+    <string name="invalid_qr">QR Inválido</string>
+    <string name="success">Éxito</string>
+    <string name="ok">Ok</string>
+    <string name="qr_code_is_saved_to_the_gallery">El código QR se ha guardado en la galería</string>
+    <string name="initialization_error">Error de inicialización</string>
+    <string name="initialization_error_detail">La app no pudo ser inicializada.
+        Por favor verifique el espacio o memoria disponible</string>
+    <string name="value_clear_data">Juan Doe</string>
+    <string name="name_clear_data">Nombre</string>
+    <string name="reloading_sdk">Reiniciando el SDK</string>
+    <string name="invalid_license_file">Archivo de licencia inválido</string>
+    <string name="invalid_license_file_detail">La licencia del archivo adjunta a esta app
+        es inválida</string>
+    <string name="license_not_found">Licencia no encontrada</string>
+    <string name="license_not_found_detail">La app necesita un archivo de licencia mobile.lic válido
+        para habilitar la funcionalidad del SDK</string>
+    <string name="go_left">Ir a la izquierda</string>
+    <string name="go_right">Ir a la derecha</string>
+    <string name="invalid_print">Zelfcrypt Inválido</string>
+    <string name="in_license_error">Error de licencia inválida</string>
+    <string name="invalid_license_error">El servidor no puede validar su licencia..
+        Por favor contacta a support@verifik.co</string>
+    <string name="generation_exceeded">Límite de generación de QR alcanzado</string>
+    <string name="verification_exceeded">Límite de verificación de QR alcanzado</string>
+    <string name="limit_exceed_title">Has alcanzado el límite.
+        Por favor contacta a support@verifik.co para soporte.</string>
+    <string name="err_signature_failed">Firma Zelfcrypt fallida</string>
+    <string name="server_auth_failed">Autenticación de servidor fallida.</string>
+    <string name="server_unreachable">Servidor no disponible</string>
+    <string name="image_decode_failed">Decodificación de imagen fallida</string>
+    <string name="err_parse_detail">Esta app  es incapáz de procesar el QR proporcionado,
+        el cual pudo haber sido creado por otro Emisor/Verificador.</string>
+    <string name="err_multiple_faces_detected">Múltiples rostros detectados</string>
+    <string name="adjust_face">Ajusta tu rostro al centro y mira hacia la cámara</string>
+    <string name="no_occlusion">Quita los objetos de tu cara: lentes de sol, cubrebocas, sombreros</string>
+    <string name="device_not_genuine">Chequeo de autenticidad fallido</string>
+    <string name="device_not_genuine_detail">Este dispositivo no está vinculado a una cuenta de Google Play.</string>
+    <string name="server_unreachable_detail">No se pudo validar la licencia móvil. Por favor
+        restablece la conexión a internet y reintentalo.</string>
+    <string name="instance_exceeded">Límite de dispositivos excedido</string>
+    <string name="instance_exceeded_detail">Has excedido el número de dispositivos permitidos.</string>
+    <string name="no_match_detail">El rostro no coincide con el del código QR</string>
+    <string name="liveness_retry_text">Intenta de nuevo pero con la siguiente guía.</string>
+    <string name="face_good_lighting">El rostro requiere verse claro con buena iluminación.</string>
+    <string name="keep_stable_hand">Mantén tu mano estable y evita moverte.</string>
+    <string name="multiple_faces_detail">No tengas a más de una cara en la cámara.</string>
+    <string name="move_gently">Mueve gentilmente</string>
+    <string name="too_much_movement">Ha habido mucho movimiento.</string>
+    <string name="extreme_detail1">Evita movimientos bruscos de tu cara.</string>
+    <string name="extreme_detail2">Evita girar tu cara de lado a lado.</string>
+    <string name="extreme_detail3">Evita movimientos largos de tu cara de arriba a abajo.</string>
+    <string name="time_out">Límite de tiempo agotado</string>
+    <string name="required_actions_detected">Las acciones requeridas no han sido detectadas.</string>
+    <string name="follow_instructions">Por favor sigue las instrucciones para completar
+        tu escaneo del rostro</string>
+    <string name="liveness_failure">Falló la prueba de vivacidad</string>
+    <string name="ensure_live_face">Asegurate de que tu rostro sea en vivo y no una imagen.</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="logout_desc">¿Quieres cerrar sesión?</string>
+    <string name="no_zns_found">No se encontró ningún ZNS</string>
+    <string name="no_zns_found_desc">No se encontró ningún ZNS, intenta de nuevo con otro</string>
+
+    <!-- Activity Open Wallet -->
+    <string name="activity_open_wallet_title">Abrir billetera existente</string>
+    <string name="activity_open_wallet_select_qr">Seleccionar el QR desde la galería</string>
+    <string name="activity_open_wallet_take_qr_photo">Tomar el QR con la cámara</string>
+
+    <!-- Main Wallet Menu -->
+    <string name="main_wallet_menu_all_addresses">Todas tus direcciones</string>
+    <string name="main_wallet_menu_sign_out">Cerrar sesión</string>
+
+    <!-- Wallet Account Menu -->
+    <string name="wallet_account_menu_see_on_explorer">Ver en el explorador etherscan.io</string>
+    <string name="wallet_account_menu_delete">Borrar</string>
+
+    <!--Activity Main -->
+    <string name="activity_onboarding_title_1">¡Bienvenido a ZNS!</string>
+    <string name="activity_onboarding_desc_1">Descubra SNS (Seed Name Service por su siglas en
+        inglés) de Zelf, el innovador servicio de nombres que te libera de recordar la frase
+        semilla. Acceda de forma segura y rápida utilizando su ZNS.
+    </string>
+    <string name="activity_onboarding_title_2">Accede con ZelfProof</string>
+    <string name="activity_onboarding_desc_2">ZelfProof (ZK-Face SNARKs) es una representación
+        binaria única, que preserva la privacidad, derivada de los datos faciales,
+        garantizando que ninguna información biométrica sea almacenada o
+        retenida durante el proceso.
+    </string>
+    <string name="activity_onboarding_title_3">IPFS - Almacenamiento descentralizado</string>
+    <string name="activity_onboarding_desc_3">Acceso sin esfuerzo a tu monedero y frase semilla.
+        Tu ZelfProof se almacena de forma segura en una red IPFS descentralizada, lo que le da
+        un control total sin la molestia de administrarlo usted mismo.
+    </string>
+    <string name="activity_main_search_title">No pierdas tu CRYPTO nunca más.</string>
+    <string name="activity_main_search_hint">Buscar nombre</string>
+    <string name="activity_main_search_zelf">.zelf</string>
+    <string name="activity_main_search_desc">buscar</string>
+    <string name="activity_main_remember_user_name">¿No recuerdas tu nombre de usuario?</string>
+    <string name="activity_main_search_button">Buscar</string>
+
+    <!-- Activity Create ZNS -->
+    <string name="activity_create_zns_subheader">Disponible</string>
+    <string name="activity_create_zns_register">Registro</string>
+    <string name="activity_create_zns_period_desc">Registrarás este nombre por 1 año.</string>
+    <string name="activity_create_zns_period_harcode_period">1 año</string>
+    <string name="activity_create_zns_until_">Registrado hasta %s</string>
+    <string name="activity_create_zns_accept_the_">Yo acepto los</string>
+    <string name="activity_create_zns_terms_and_conditions"><u>términos y condiciones</u></string>
+    <string name="activity_create_zns_create_button">Crear una nueva billetera</string>
+    <string name="activity_create_zns_import_button">Importar una billetera existente</string>
+    <!-- Activity Open ZNS -->
+    <string name="activity_open_zns_subheader">Registrado</string>
+    <string name="activity_open_zns_title">ZELF NAME ENCONTRADO</string>
+    <string name="activity_open_zns_title2">ZELFPROOF ENCONTRADO</string>
+    <string name="activity_open_zns_desc">Las siguientes direcciones públicas fueron
+        encontradas:</string>
+    <string name="activity_open_zns_eth_address">Dirección ETH</string>
+    <string name="activity_open_zns_solana_address">Dirección Solana</string>
+    <string name="activity_open_zns_login_button">Login</string>
+
+    <!-- Activity 12 24 -->
+    <string name="activity_1224_subheader">1 DE 4 <b>BILLETERA</b></string>
+    <string name="activity_1224_title">Encriptación Zelfproof</string>
+    <string name="activity_1224_phrase_1">La frase privada de recuperación consta de 12 o 24
+        palabras, necesarias para acceder y recuperar la billetera.</string>
+    <string name="activity_1224_phrase_2">Zelf Wallet elimina la necesidad de almacenamiento
+        manual mediante la encriptación de su frase de recuperación en un poderoso ZelfProof
+        que preserva la privacidad. Este ZelfProof se almacena de forma segura dentro de un
+        código QR que sólo tú puedes descifrar, garantizando una seguridad sin precedentes.</string>
+    <string name="activity_1224_safeguard_1">El código QR sirve como una robusta bóveda digital
+        para sus claves de recuperación, mejorada por nuestro Zelf Name Service (ZNS).
+        Con ZNS, puede realizar fácilmente copias de seguridad y recuperar su código
+        QR utilizando su nombre Zelf.</string>
+    <string name="activity_1224_safeguard_2"></string>
+    <string name="activity_1224_textinputplaceholder">Frase de 12 o 24 palabras</string>
+    <string name="activity_1224_i_understand_no_recover">Entiendo que Zelf puede helo recuperar el
+        código QR con ZNS. Sin embargo, sigo siendo responsable de salvaguardarlo
+        para garantizar un acceso seguro.</string>
+    <string name="activity_1224_more_info">Más información</string>
+    <string name="activity_1224_12_option">Frase de 12 Palabras</string>
+    <string name="activity_1224_24_option">Frase de 24 Palabras</string>
+    <string name="activity_1224_button_start_biometric">Iniciar Encriptación Biométrica</string>
+    <string-array name="activity_1224_options">
+        <item>12 palabras</item>
+        <item>24 palabras</item>
+    </string-array>
+
+    <!-- Activity Password -->
+    <string name="activity_password_subheader1">2 DE 4 <b>CONTRASEÑA</b></string>
+    <string name="activity_password_title">Capas de Seguridad</string>
+    <string name="activity_password_desc">Zelf Wallet, por defecto, encripta el monedero con la
+        biometría facial del usuario. La siguiente contraseña es una capa de seguridad de cifrado
+        opcional solo para este dispositivo.</string>
+    <string name="activity_password_placeholder_password">Contraseña (opcional)</string>
+    <string name="activity_password_placeholder_confirm_password">Confirmar contraseña</string>
+    <string name="activity_password_i_understand_no_recover">Comprendo que Zelf Wallet no puede
+        recuperar esta contraseña y que al optar por esta segunda capa de seguridad, soy
+        el único responsable de recordarla.</string>
+    <string name="activity_password_more_info">Más información</string>
+    <string name="activity_password_button_create_password">Dos capas de seguridad</string>
+    <string name="activity_password_button_just_biometric">Una capa de seguridad</string>
+    <string name="activity_password_error_empty_password">Please provide a password</string>
+    <string name="activity_password_error_empty_confirm_password">Please provide a confirm
+        password</string>
+    <string name="activity_password_error_different_password">Confirmation password
+        does not match</string>
+
+    <!-- Activity QR Scanner -->
+    <string name="activity_qr_scanner_header">Escanear QR</string>
+    <string name="activity_qr_scanner_subheader">1 DE 4 <b>ABRIR ZELF PROOF</b></string>
+    <string name="activity_qr_scanner_instructions">Por favor situa el QR dentro del marco</string>
+
+    <!-- Activity Face Instructions -->
+    <string name="activity_face_instructions_subheader">3 DE 4 <b>ENCRIPTAR</b></string>
+    <string name="activity_face_instructions_title">Encriptación Zelfproof</string>
+    <string name="activity_face_instructions_desc">Usted está a punto de hacer una detección de
+        liveness para crear un ZelfProof, que cifrará de forma segura sus frases de recuperación.
+        Siga los pasos para asegurar un proceso suave y eficaz.
+    </string>
+    <string name="activity_face_instructions_1">Coloca tu cara dentro la marca indicada.</string>
+    <string name="activity_face_instructions_2">Mira fijamente a la cámara y evita moverte.</string>
+    <string name="activity_face_instructions_3">Asegúrese de realizar los gestos faciales
+        requeridos.</string>
+    <string name="activity_face_dont_show_instructions">No volver a mostrar estas instrucciones.</string>
+    <string name="activity_face_instructions_start">Empezar</string>
+
+    <!-- Activity Face Scan -->
+    <string name="activity_face_scan_subheader">3 DE 4 <b>ENCRIPTAR</b></string>
+    <string name="move_closer">Acercate un poco</string>
+    <string name="move_further">Alejate un poco</string>
+    <string name="place_face_within_oval">Coloca tu cara dentro del círculo</string>
+    <string name="look_up">Mira un poco para arriba</string>
+    <string name="unknown_error_detail">Un error desconocido ocurrió mientras procesaba la imagen.
+        Por favor, inténtalo de nuevo más tarde.</string>
+    <string name="unkown_error">Error desconocido</string>
+    <string name="network_error_detail">Restablece la conexión a internet para reintentar.</string>
+    <string name="look_down">Mira un poco para abajo</string>
+    <string name="look_right">Mira un poco para la derecha</string>
+    <string name="network_error">Error de conexión</string>
+    <string name="look_left">Mira un poco para la izquierda</string>
+    <string name="stay_still">Por favor, permanezca quieto</string>
+    <string name="look_straight">Mira de frente a la cámara</string>
+    <string name="look_top_right">Mira un poco arriba a la derecha</string>
+    <string name="look_top_left">Mira un poco arriba a la izquierda</string>
+    <string name="look_bottom_left">Mira un poco abajo a la izquierda</string>
+    <string name="look_bottom_right">Mira un poco abajo a la derecha</string>
+    <string name="center_your_face">Centra tu cara</string>
+    <string name="empty_string"></string>
+    <string name="face_scan_decrypted">Desencriptación completada</string>
+    <string name="verify_your_face_once_more">Verifica tu rostro una vez más para
+        validar el código QR</string>
+    <string name="face_scan_complete">Escaneo completado</string>
+    <string name="err_no_face_detected">No hay una cara detectada</string>
+    <string name="we_got_all">¡Genial! Verificado.</string>
+    <string name="face_capture_error">Error al capturar el rostro</string>
+    <string name="no_face_detected">Rostro no detectado</string>
+    <string name="multiple_faces_detected">Múltiples rostros detectados</string>
+    <string name="improve_face_quality">Mejora la calidad de la foto</string>
+    <string name="verification_failed">La verificación falló</string>
+    <string name="decryption_failed">La cara no pudo ser verificada. Intentar de nuevo?</string>
+    <string name="liveness_failed">El liveness falló. Por favor mejora la luz y quita
+        los objetos de tu cara.</string>
+    <string name="license_expired">Licencia Vencida</string>
+    <string name="license_expired_detail">La licencia para esta app expiró. Por favor
+        contacta a support@verifik.co</string>
+    <string name="generating_qr_code">Generando el código QR</string>
+    <string name="feature_not_available">Funcionalidad no disponible con la licencia actual</string>
+    <string name="feature_not_available_title">Funcionalidad no disponible</string>
+    <string name="feature_not_available_detail">Tu licencia para la aplicación no te permite
+        crear códigos QR sin conexión.</string>
+    <string name="no_clear_text_data">No hay datos sin encriptar</string>
+    <string name="no_clear_text_data_detail">Todos los datos de este QR se encuentran encriptados
+        con un rostro. Intenta verificar tu cara para visualizar los datos</string>
+    <string name="pinch_to_zoom">Pellizca para hacer zoom</string>
+
+
+    <!-- Show QR Activity -->
+    <string name="activity_show_qr_subtitle">4 DE 4 <b>ZELF NAME</b></string>
+    <string name="activity_show_qr_success_title">BILLETERA CIFRADA CON ÉXITO CON
+        ZELFPROOF</string>
+    <string name="activity_show_qr_success_desc">Tu frase de recuperación ha sido encriptada y
+        salvaguardada dentro de este Zelfproof, el QR es sólo una representación gráfica para que
+        lo guardes con facilidad.\n\n
+        Si alguna vez pierdes el QR, puedes recuperarlo utilizando tu nombre Zelf registrado a
+        través de Zelf Name Service (ZNS).</string>
+    <string name="activity_show_qr_success_title_open">Has abierto exitosamente tu billetera
+        existente</string>
+    <string name="activity_show_qr_success_desc_open">Ahora puedes empezar a utilizar tu billetera
+        en este dispositivo con toda la seguridad proporcionada por Zelf Wallet.</string>
+    <string name="activity_show_qr_eth_address_">Dirección Ethereum</string>
+    <string name="activity_show_qr_solana_address_">Dirección Solana</string>
+    <string name="activity_show_qr_mnemonic_phrase_">Copiar Frase Mnemónica</string>
+    <string name="activity_show_qr_copy">Copiar</string>
+    <string name="activity_show_qr_copied">Copiado</string>
+    <string name="activity_show_qr_download_desc">Guarda este código QR para acceder a tu
+        monedero y recuperarlo.</string>
+    <string name="activity_show_qr">Descargar Zelf Proof</string>
+    <string name="activity_show_qr_understood">Continuar</string>
+    <string name="activity_show_qr_account_">Cuenta %s</string>
+    <string name="save_qr">Descargar Zelf Proof</string>
+
+    <!-- Activity Import Wallet -->
+    <string name="activity_import_wallet_subheader">1 DE 4 <b>FRASE DE RECUPERACIÓN</b></string>
+    <string name="activity_import_wallet_title">Ingresa la frase secreta de recuperación</string>
+    <string name="activity_import_wallet_desc">Utilizaremos su frase semilla mnemotécnica para
+        validar e importar una billetera existente. Por favor, introdúzcalas a continuación.</string>
+    <string name="activity_import_wallet_copy">Puedes pegar toda la frase secreta de recuperación
+        en cualquier campo</string>
+    <string name="activity_import_wallet_words">Palabras</string>
+    <string name="activity_import_wallet_confirm">Confirmar</string>
+
+    <!-- Activity Reader Wallet -->
+    <string name="activity_reader_wallet_header">Encontrar Zelf</string>
+    <string name="activity_reader_wallet_subheader">1 of 4 <b>ABRIR ZELFPROOF</b></string>
+    <string name="activity_reader_wallet_title">Encontrar el Zelf Name</string>
+    <string name="activity_reader_wallet_desc">Encuentra un Zelf Name existente ingresando
+        su dirección pública</string>
+    <string name="activity_reader_wallet_public_address">Ingresa la dirección pública</string>
+    <string name="activity_reader_wallet_desc2">O define el método por el que
+        decriptarás tu código QR</string>
+    <string name="activity_reader_wallet_select_qr">Subir desde galería</string>
+    <string name="activity_reader_wallet_take_qr_photo">Leer con la cámara</string>
+    <string name="activity_reader_wallet_back">Regresar</string>
+
+    <!-- Activity Reader Detail -->
+    <string name="activity_reader_detail_wallet_header">2 de 3</string>
+    <string name="activity_reader_detail_wallet_subheader">ABRIR BILLETERA</string>
+    <string name="activity_reader_detail_title">Información</string>
+    <string name="activity_reader_detail_desc">Estos son los detalles relacionados
+        con la billetera que intentas abrir. Por favor confirmalos para verificar que es tu billetera.</string>
+    <string name="activity_reader_unlock_info">Desbloquear billetera</string>
+    <string name="activity_reader_detail_back">Regresar</string>
+
+    <!-- Dialog QR Password -->
+    <string name="dialog_qr_password_title">Esta billetera requiere contraseña</string>
+    <string name="enter_password">Introduce la contraseña</string>
+    <string name="password">Contraseña</string>
+    <string name="password_is_required_to_proceed">La contraseña es requerida para continuar</string>
+    <string name="continue_txt">Continuar</string>
+    <string name="no">No</string>
+    <string name="retry">Reintentar</string>
+    <string name="password_incorrect">La contraseña que intentaste ingresar es incorrecta.
+        Intenta de nuevo.</string>
+    <string name="cancel">Cancelar</string>
+    
+    <!-- Activity Succcess Send Crypto -->
+    <string name="activity_success_send_crypto_title">La transacción se ha completado
+        con éxito.</string>
+    <string name="activity_success_send_crypto_desc">Tus cryptos han sido enviados
+        correctamente.</string>
+    <string name="activity_success_send_crypto_button">Ver mi recibo</string>
+
+    <!-- Activity Scan To Send -->
+    <string name="activity_scan_to_send_title">Escanear Código QR</string>
+    <string name="activity_scan_to_send_desc">Escanea el código QR generado en
+        la extensión de Zelf Wallet para acceder la transacción actual.</string>
+
+    <!-- Fragment Main Wallet -->
+    <string name="fragment_main_wallet_receive">Recibir</string>
+    <string name="fragment_main_wallet_send">Enviar</string>
+    <string name="fragment_main_wallet_qr_scanner">Escanear QR</string>
+    <string name="fragment_main_wallet_tokens">Activos</string>
+    <string name="fragment_main_wallet_nfts">NFTs</string>
+    <string name="fragment_main_wallet_activity">Actividad</string>
+
+    <!-- Activity Send Crypto -->
+    <string name="activity_send_crypto_title">Enviar</string>
+    <string name="activity_send_crypto_send_from">Enviar desde</string>
+    <string name="activity_send_crypto_send_to">Enviar a</string>
+    <string name="activity_send_crypto_address_textfield_placeholder_eth">Ingresa la dirección
+        pública ETH (0x)</string>
+    <string name="activity_send_crypto_provide_a_valid_address">Proveé una dirección válida</string>
+    <string name="activity_send_crypto_amount">Cantidad</string>
+    <string name="activity_send_crypto_max">Max</string>
+    <string name="activity_send_crypto_gas">Gas</string>
+    <string name="activity_send_crypto_estimated">(Estimado)</string>
+    <string name="activity_send_crypto_probably_30_sec">Probable en &lt;30
+        segundos</string>
+    <string name="activity_send_crypto_max_fare_">Tarifa máxima:</string>
+    <string name="activity_send_crypto_not_enough_balance">Fondos insuficientes</string>
+    <string name="activity_send_crypto_back">Regresar</string>
+    <string name="activity_send_crypto_send">Enviar</string>
+    <array name="activity_send_crypto_networks">
+        <item>Ethereum</item>
+        <item>Sepolia</item>
+    </array>
+    <string name="activity_send_crypto_your_accounts">Tus cuentas</string>
+    <string name="activity_send_crypto_contacts">Contactos</string>
+
+    <!-- Activity Confirm Send Crypto -->
+    <string name="activity_confirm_send_crypto_title">Enviar</string>
+    <string name="activity_confirm_send_crypto_sending_eth">Enviando ETH</string>
+    <string name="activity_confirm_send_crypto_market">Mercado</string>
+    <string name="activity_confirm_send_crypto_gas">Gas</string>
+    <string name="activity_confirm_send_crypto_estimated">(Estimado)</string>
+    <string name="activity_confirm_send_crypto_probably_30_sec">Probable en &lt;30
+        segundos</string>
+    <string name="activity_confirm_send_crypto_max_fare_">Tarifa máxima:</string>
+    <string name="activity_confirm_send_crypto_total">Total</string>
+    <string name="activity_confirm_send_crypto_amount_plus_gas_fare">Importe + tarifa de
+        gas</string>
+    <string name="activity_confirm_send_crypto_max_amount_">Cantidad máxima:</string>
+    <string name="activity_confirm_send_crypto_confirm_with_biometric">Confirmar
+        con mi biometría facial</string>
+    <string name="activity_confirm_send_crypto_back">Regresar</string>
+    <string name="activity_confirm_send_crypto_send">Enviar</string>
+
+    <!-- Activity Account -->
+    <string name="activity_account_desc">No olvide guardar su código QR, haga varias copias si
+        es necesario. </string>
+    <string name="activity_account_copy">Copy</string>
+    <string name="activity_account_eth_address_">Dirección Pública ETH</string>
+    <string name="activity_account_solana_address_">Dirección Pública Solana</string>
+    <string name="activity_account_download">Descargar código QR</string>
+    <string name="activity_account_download_desc">Descargar</string>
+    <string name="activity_account_button_recover_account">Ver llave privada</string>
+    <string name="activity_account_recover_desc">Recuperar</string>
+
+    <!-- Fragment Change Account -->
+    <string name="fragment_change_account_return">Regresar</string>
+    <string name="fragment_change_account_title">Elige una billetera</string>
+    <string name="fragment_change_account_button_desc">Agregar</string>
+    <string name="fragment_change_account_button_add_account">Crear o importar billetera</string>
+
+    <!-- Activity Contacts -->
+    <string name="fragment_contacts_return">Regresar</string>
+    <string name="fragment_contacts_title">Todas tus direcciones</string>
+    <string name="fragment_contacts_search_hint">Nombre de la blockchain o ID</string>
+    <string name="fragment_contacts_button_add_address">Añadir dirección</string>
+
+    <!-- Dialog Add address -->
+    <string name="dialog_add_address_title">Añadir dirección</string>
+    <string name="dialog_add_address_hint">Nueva dirección</string>
+    <string name="dialog_add_address_button_add">Añadir</string>
+    <string name="dialog_add_address_button_cancel">Cancelar</string>
+
+    <!-- Fragment Tokens -->
+    <string name="fragment_tokens_empty">Actualmente no hay activos</string>
+
+    <!-- Fragment NFTs -->
+    <string name="fragment_nfts_empty">Actualmente no hay NFTs</string>
+
+    <!-- Fragment Activity -->
+    <string name="fragment_activity_empty">Actualmente no hay transacciones</string>
+    <string name="fragment_activity_sent">Enviado</string>
+    <string name="fragment_activity_received">Recibido</string>
+    <string name="fragment_activity_from_">%s</string>
+    <string name="fragment_activity_to_">%s</string>
+
+    <!-- Popup Detail Transaction -->
+    <string name="popup_detail_transaction_status">Estatus</string>
+    <string name="popup_detail_transaction_view_on_eth_explorer">Ver en el explorador de
+        bloques</string>
+    <string name="popup_detail_transaction_copy_transaction_id">Copy transaction ID</string>
+    <string name="popup_detail_transaction_from_">Desde:</string>
+    <string name="popup_detail_transaction_to_">A:</string>
+    <string name="popup_detail_transaction_transaction">Transacción</string>
+    <string name="popup_detail_transaction_nonce">Nonce</string>
+    <string name="popup_detail_transaction_amount">Cantidad</string>
+    <string name="popup_detail_transaction_gas_limit">Límite de gas (Unidades)</string>
+    <string name="popup_detail_transaction_gas_used">Uso de gas (Unidades)</string>
+    <string name="popup_detail_transaction_base_fee">Tarifa base (GWEI)</string>
+    <string name="popup_detail_transaction_priority_fee">Tasa prioritaria (GWEI)</string>
+    <string name="popup_detail_transaction_total_gas_fee">Tasa total de gas</string>
+    <string name="popup_detail_transaction_max_fee_per_gas">Max fee per gas</string>
+    <string name="popup_detail_transaction_total">Total</string>
+    <string name="popup_detail_transaction_status_confirmed">Confirmado</string>
+    <string name="popup_detail_transaction_status_error">Error</string>
+
+    <string name="yes">Si</string>
+</resources>

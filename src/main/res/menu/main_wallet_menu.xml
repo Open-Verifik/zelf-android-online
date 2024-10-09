@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/all_addresses"
+        android:icon="@drawable/ic_copy2"
+        android:title="@string/main_wallet_menu_all_addresses" />
+    <item android:id="@+id/sign_out"
+        android:icon="@drawable/baseline_close_24"
+        android:title="@string/main_wallet_menu_sign_out" />
+</menu>

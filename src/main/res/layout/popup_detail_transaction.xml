@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:gravity="center_vertical"
+    android:background="#BB000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:id="@+id/textview_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="16sp"
+                    android:textColor="#010333" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/baseline_close_24"
+                    app:tint="#767680"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="14sp"
+                    android:textColor="#010333"
+                    android:text="@string/popup_detail_transaction_status"/>
+
+                <TextView
+                    android:id="@+id/textview_view_on_explorer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="14sp"
+                    android:textColor="#415AA9"
+                    android:text="@string/popup_detail_transaction_view_on_eth_explorer" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textview_copy_transaction_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="14sp"
+                    android:textColor="#415AA9"
+                    android:text="@string/popup_detail_transaction_copy_transaction_id" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi"
+                        android:textSize="14sp"
+                        android:textColor="#010333"
+                        android:text="@string/popup_detail_transaction_from_"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="6dp"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/qr_code"/>
+                        <TextView
+                            android:id="@+id/textview_address_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:maxWidth="90dp"
+                            android:fontFamily="@font/poppins_semi"
+                            android:ellipsize="middle"
+                            android:singleLine="true"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:text="Cuenta 1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/arrow_forward"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circle"
+                    app:tint="#000" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi"
+                        android:layout_marginStart="3dp"
+                        android:textSize="14sp"
+                        android:textColor="#010333"
+                        android:text="@string/popup_detail_transaction_to_"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#E7F0F9"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="6dp"
+                                android:gravity="center_vertical">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qr_code"/>
+                                <TextView
+                                    android:id="@+id/textview_address_to"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:maxWidth="90dp"
+                                    android:fontFamily="@font/poppins_semi"
+                                    android:textColor="#000"
+                                    android:ellipsize="middle"
+                                    android:singleLine="true"
+                                    android:textSize="13sp"
+                                    android:text="Cuenta 1"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi"
+                android:textSize="14sp"
+                android:textColor="#010333"
+                android:layout_marginTop="30dp"
+                android:text="@string/popup_detail_transaction_transaction"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_nonce"/>
+
+                <TextView
+                    android:id="@+id/textview_nonce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_amount"/>
+
+                <TextView
+                    android:id="@+id/textview_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_gas_limit"/>
+
+                <TextView
+                    android:id="@+id/textview_gas_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_gas_used"/>
+
+                <TextView
+                    android:id="@+id/textview_gas_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_base_fee"/>
+
+                <TextView
+                    android:id="@+id/textview_base_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_priority_fee"/>
+
+                <TextView
+                    android:id="@+id/textview_priority_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_total_gas_fee"/>
+
+                <TextView
+                    android:id="@+id/textview_total_gas_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_max_fee_per_gas"/>
+
+                <TextView
+                    android:id="@+id/textview_total_max_fee_per_gas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="@string/popup_detail_transaction_total"/>
+
+                <TextView
+                    android:id="@+id/textview_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semi"
+                    android:textSize="13sp"
+                    android:textColor="#303034"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

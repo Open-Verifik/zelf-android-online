@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_account"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/zBackground"
+    app:rippleColor="@color/zPrimary"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/zPrimary"/>
+
+        <ImageView
+            android:id="@+id/imageview_account_selected"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/zTextColor"/>
+
+            <TextView
+                android:id="@+id/textview_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:lines="1"
+                android:ellipsize="middle"
+                android:textSize="16sp"
+                android:textColor="@color/zTextColor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textview_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/zTextColor"
+                android:text="0.00 ETH"/>
+
+            <TextView
+                android:id="@+id/textview_balance_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:textColor="@color/zTextColor"
+                android:text="1464.0 USD"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ellipsis_vertical"
+            app:tint="@color/zTextColor"/>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

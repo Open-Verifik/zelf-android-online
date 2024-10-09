@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="40dp"
+    android:foregroundGravity="center_horizontal"
+    android:paddingHorizontal="40dp"
+    app:cardBackgroundColor="@color/zBackground"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:textColor="#F27274"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textColor="@color/zTextColor"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:paddingTop="4dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/no"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                style="@style/button_positive_1_border" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnYes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/retry"
+                android:textSize="16sp"
+                style="@style/button_positive_1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

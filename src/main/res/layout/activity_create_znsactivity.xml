@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.zns.CreateZNSActivity">
+
+    <include layout="@layout/action_bar_create_zns" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppins_semi"
+        android:textColor="@color/zTextColor"
+        android:textSize="14sp"
+        android:text="@string/activity_create_zns_register"/>
+
+    <TextView
+        android:id="@+id/textview_zname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/menda_bold"
+        android:textColor="@color/zTextColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppins_semi"
+        android:textColor="@color/zDot"
+        android:textSize="14sp"
+        android:text="@string/activity_create_zns_period_desc"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/menda_bold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/activity_create_zns_period_harcode_period"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textview_expire_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semi"
+        android:textColor="@color/zDot"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3"
+        android:layout_marginVertical="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkbox_accept_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/activity_create_zns_accept_the_"
+            app:buttonTint="@color/zTextColor"/>
+
+        <TextView
+            android:id="@+id/textview_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/activity_create_zns_terms_and_conditions"
+            android:textColor="@color/zTextColor"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_create_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:text="@string/activity_create_zns_create_button"
+        android:textAllCaps="false"
+        android:enabled="false"
+        style="@style/button_positive_1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_import_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:text="@string/activity_create_zns_import_button"
+        android:textAllCaps="false"
+        android:enabled="false"
+        style="@style/button_positive_1_border"/>
+
+
+</LinearLayout>
